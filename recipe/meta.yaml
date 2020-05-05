@@ -1,4 +1,4 @@
-{% set version = '1.1.2' %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -15,15 +15,15 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1001
+  merge_build_host: true  # [win]
+  number: 1002
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-shiny
@@ -39,11 +39,12 @@ test:
 about:
   home: https://github.com/jasdumas/shinyLP
   license: MIT
-  summary: Provides functions that wrap HTML Bootstrap components code to enable the design and
-    layout of informative landing home pages for Shiny applications. This can lead to
-    a better user experience for the users and writing less HTML for the developer.
+  summary: Provides functions that wrap HTML Bootstrap components code to enable the design and layout of informative landing home pages for Shiny applications. This can lead to a better user experience for the users and writing less HTML for the developer.
   license_family: MIT
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 extra:
   recipe-maintainers:
     - conda-forge/r
