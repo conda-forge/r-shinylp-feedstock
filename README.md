@@ -1,11 +1,11 @@
-About r-shinylp
-===============
+About r-shinylp-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinylp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jasdumas/shinyLP
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinylp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides functions that wrap HTML Bootstrap components code to enable the design and layout of informative landing home pages for Shiny applications. This can lead to a better user experience for the users and writing less HTML for the developer.
 
